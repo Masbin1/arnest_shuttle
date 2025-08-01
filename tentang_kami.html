@@ -28,20 +28,26 @@
       </div>
     </header>
 
-    <!-- Tentang Kami Section -->
-    <section class="py-12 bg-white">
-      <div class="container mx-auto px-4 max-w-4xl">
-        <!-- Page Title -->
-        <h1 class="text-3xl font-bold mb-8 text-center">Arnes Shuttle</h1>
+    <!-- Tentang Kami Section dengan Background -->
+    <section
+      class="relative min-h-[calc(100vh-120px)] bg-cover bg-center"
+      style="background-image: url('src/img/tentang_kami.png')"
+    >
+      <!-- Overlay gelap untuk kontras teks -->
+      <div class="absolute inset-0 bg-black/40"></div>
 
-        <!-- Divider -->
-        <div class="border-t border-gray-300 my-6"></div>
+      <!-- Konten -->
+      <div class="relative z-10 container mx-auto px-6 py-12">
+        <!-- Garis Pembatas -->
+        <div class="border-t border-white/30 my-6"></div>
 
-        <!-- Content Section -->
-        <div class="space-y-6">
-          <h2 class="text-2xl font-bold">Tentang Kami</h2>
+        <!-- Konten Tentang Kami -->
+        <div
+          class="bg-white/90 p-6 rounded-lg max-w-4xl mx-auto backdrop-blur-sm"
+        >
+          <h2 class="text-2xl font-bold mb-4">Tentang Kami</h2>
 
-          <p class="text-gray-700 leading-relaxed">
+          <p class="text-gray-700 leading-relaxed mb-4">
             Arnes Shuttle adalah layanan transportasi darat berbasis di Bandung
             yang dikelola oleh PT Niaga Handal Cemerlang. Berdiri sejak 1
             Desember 2011, kami hadir sebagai solusi mobilitas andal bagi
@@ -51,7 +57,7 @@
             Bekasi, dan Purwakarta.
           </p>
 
-          <div class="space-y-4">
+          <div class="space-y-3">
             <p class="text-gray-700">
               <span class="font-bold">Visi</span> : Menjadi penyedia layanan
               transportasi darat terpercaya yang mendukung gaya hidup aktif dan

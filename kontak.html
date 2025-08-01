@@ -3,72 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arnes Shuttle</title>
+    <title>Kontak - Arnes Shuttle</title>
     <link href="dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="src/img/fav.png" />
   </head>
   <body class="text-gray-900">
     <!-- Header -->
     <header class="bg-white shadow-md">
-      <div class="container mx-auto flex justify-between items-center p-4">
+      <div
+        class="container mx-auto flex justify-between items-center py-2 px-4"
+      >
         <!-- Logo -->
-        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-20" />
-
+        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-28" />
         <!-- Menu -->
-        <nav class="space-x-6 text-sm font-semibold">
-          <a href="index.html" class="hover:text-orange-600">Beranda</a>
-          <a href="tentang_kami.html" class="hover:text-orange-600"
+        <nav class="space-x-4 font-semibold text-sm">
+          <a href="index.html" class="hover:text-orange-500">Beranda</a>
+          <a href="tentang_kami.html" class="hover:text-orange-500"
             >Tentang Kami</a
           >
-          <a href="layanan.html" class="hover:text-orange-600">Layanan</a>
-          <a href="pesan_tiket.html" class="hover:text-orange-600"
+          <a href="layanan.html" class="hover:text-orange-500">Layanan</a>
+          <a href="pesan_tiket.html" class="hover:text-orange-500"
             >Pesan Tiket</a
           >
-          <a href="kontak.html" class="hover:text-orange-600">Kontak</a>
+          <a href="kontak.html" class="hover:text-orange-500">Kontak</a>
         </nav>
       </div>
     </header>
 
+    <!-- Hero Kontak -->
     <section
-      class="relative h-screen bg-cover bg-center"
+      class="relative bg-cover bg-center text-white"
       style="
-        background-image: linear-gradient(
-            to right,
-            rgba(255, 255, 255, 0) 0%,
-            rgb(0, 0, 0) 100%
-          ),
-          url('src/img/hero_home_1.jpg'), url('src/img/hero_home.jpg');
-        background-blend-mode: lighten;
-        background-size: cover;
-        background-position: center;
+        background-image: url('src/img/kontak.jpg');
+        min-height: calc(100vh - 144px);
       "
     >
-      <!-- Konten Tengah -->
+      <!-- Overlay -->
       <div
-        class="absolute inset-0 flex items-center justify-center text-center px-4"
-      >
-        <div class="text-white drop-shadow-lg">
-          <h1 class="text-4xl md:text-5xl font-extrabold mb-2">
-            ARNES SHUTTLE
-          </h1>
-          <p class="text-lg italic font-medium">Ngga Telat, Nyaman Dijalan</p>
-        </div>
-      </div>
+        class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"
+      ></div>
 
-      <!-- Bubble Putih -->
+      <!-- Konten -->
       <div
-        class="absolute bottom-0 right-0 bg-white rounded-tl-[100px] px-6 py-4 text-sm text-gray-800 text-right shadow-xl"
+        class="relative z-10 container mx-auto px-6 py-12 flex flex-col justify-center h-full"
       >
-        <p class="font-semibold leading-tight">
-          Alamat: Baltos<br />(Balubur Town Square),<br />Bandung
-        </p>
-        <p class="mt-2">Jam Operasional: 06.00 – 21.00 WIB</p>
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">Kontak</h1>
+        <div class="bg-black/30 p-6 rounded-lg backdrop-blur-sm max-w-md">
+          <h2 class="text-2xl font-semibold mb-2">Hubungi Kami</h2>
+          <p class="text-base">Alamat: Baltos (Balubur Town Square), Bandung</p>
+          <p class="text-base mt-1">Jam Operasional: 06.00 – 21.00 WIB</p>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-800 py-6">
-      <div class="container mx-auto flex justify-center space-x-8">
+    <footer class="bg-white text-gray-800 py-4">
+      <div class="container mx-auto flex justify-center space-x-6">
         <a href="#" target="_blank">
           <img src="src/img/wa.png" alt="WhatsApp" class="h-6 w-6" />
         </a>

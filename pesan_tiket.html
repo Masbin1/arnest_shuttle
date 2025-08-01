@@ -1,73 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insurgent Club</title>
-    <link href="dist/output.css" rel="stylesheet" />
+    <title>Arnes Shuttle - Pesan Tiket</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="src/img/fav.png" />
   </head>
-  <body class="text-white">
+  <body class="bg-gray-50 text-gray-800">
     <!-- Header -->
-    <header class="bg-black">
-      <div class="container mx-auto flex justify-between items-center p-4">
-        <!-- Logo -->
-        <div class="font-bold text-xl">Insurgent Club</div>
-
-        <!-- Menu -->
-        <nav class="space-x-6 text-sm">
-          <a href="index.html" class="font-bold">Beranda</a>
-          <a href="about_us.html">Tentang Kami</a>
-          <a href="new_release.html">Layanan</a>
-          <a href="contact.html">Pesan Tiket</a>
-          <a href="contact.html">kontak</a>
+    <header class="bg-white shadow-md">
+      <div
+        class="container mx-auto flex justify-between items-center py-2 px-4"
+      >
+        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-28" />
+        <nav class="space-x-4 font-semibold text-sm">
+          <a href="index.html" class="hover:text-orange-500">Beranda</a>
+          <a href="tentang_kami.html" class="hover:text-orange-500"
+            >Tentang Kami</a
+          >
+          <a href="layanan.html" class="hover:text-orange-500">Layanan</a>
+          <a href="pesan_tiket.html" class="text-orange-500">Pesan Tiket</a>
+          <a href="kontak.html" class="hover:text-orange-500">Kontak</a>
         </nav>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <section
-      class="bg-cover bg-center h-screen flex items-center"
-      style="background-image: url('src/img/home_page.jpg')"
-    >
-      <div class="container mx-auto px-4">
-        <h1 class="text-5xl font-extrabold mb-2">Insurgent</h1>
-        <h2 class="text-4xl font-light mb-4">Club</h2>
-        <p class="text-md">
-          Build Your <span class="font-bold">Confident</span>, And Make's You
-          <span class="font-bold">Spotlight</span>
-        </p>
-      </div>
-    </section>
-    <!-- Footer -->
-    <footer class="bg-white text-gray-700 mt-12">
-      <div
-        class="container mx-auto px-6 py-10 flex flex-col md:flex-row justify-between text-sm space-y-6 md:space-y-0"
-      >
-        <!-- Alamat -->
-        <div class="max-w-md">
-          <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
-          <p class="text-gray-600">
-            Alamat:<br />
-            Jl. Trunojoyo No.6, Citarum,<br />
-            Kec. Bandung Wetan, Kota Bandung,<br />
-            Jawa Barat 40115, Indonesia
-          </p>
-          <p class="text-gray-600 mt-2">Telepon: +62 812-9500-0701</p>
-        </div>
+    <!-- Booking Steps -->
+    <div class="container mx-auto px-4 py-6 flex border-b">
+      <div class="booking-step active">Lokasi Keberangkatan</div>
+      <div class="booking-step">Mau Kemana</div>
+      <div class="booking-step">Tanggal & Jam</div>
+      <div class="booking-step">Data Diri</div>
+      <div class="booking-step">Pembayaran</div>
+    </div>
 
-        <!-- Social Media -->
-        <div class="flex flex-col items-start">
-          <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
-          <div class="flex space-x-4 mt-2">
-            <a href="https://www.instagram.com/insurgentclub_" target="_blank">
-              <img src="src/img/ig.png" class="h-6 w-6" alt="Instagram" />
-            </a>
-            <a href="https://www.tiktok.com/@insurgentclub_" target="_blank">
-              <img src="src/img/tt.png" class="h-6 w-6" alt="TikTok" />
-            </a>
-          </div>
-        </div>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 max-w-4xl">
+      <!-- Important Notes -->
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-xl font-bold mb-4">Catatan Penting:</h3>
+        <ul class="list-disc pl-5 space-y-2">
+          <li>
+            E-Tiket akan dikirim ke WhatsApp dan/atau email setelah pembayaran
+            berhasil.
+          </li>
+          <li>Mohon datang ke titik keberangkatan 15 menit sebelum jadwal.</li>
+          <li>
+            Tiket tidak dapat dibatalkan, namun dapat dijadwal ulang maksimal
+            H-1 keberangkatan.
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-800 py-4 border-t border-gray-200 mt-8">
+      <div class="container mx-auto flex justify-center space-x-6">
+        <a href="#" target="_blank">
+          <img src="src/img/wa.png" alt="WhatsApp" class="h-6 w-6" />
+        </a>
+        <a href="mailto:info@arnesshuttle.com">
+          <img src="src/img/email.png" alt="Email" class="h-6 w-6" />
+        </a>
+        <a href="https://www.instagram.com/arnesshuttle" target="_blank">
+          <img src="src/img/ig.png" alt="Instagram" class="h-6 w-6" />
+        </a>
       </div>
     </footer>
   </body>
