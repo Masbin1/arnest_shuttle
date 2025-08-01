@@ -7,15 +7,13 @@
     <link href="dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="src/img/fav.png" />
   </head>
-  <body class="text-gray-900 h-screen flex flex-col">
+  <body class="text-gray-900 min-h-screen flex flex-col">
     <!-- Header -->
-    <header class="bg-white shadow-md flex-shrink-0">
+    <header class="bg-white shadow-md">
       <div
         class="container mx-auto flex justify-between items-center py-2 px-4"
       >
-        <!-- Logo -->
         <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-20" />
-        <!-- Menu -->
         <nav class="space-x-4 font-semibold text-sm">
           <a href="index.html" class="hover:text-orange-500">Beranda</a>
           <a href="tentang_kami.html" class="hover:text-orange-500"
@@ -30,29 +28,32 @@
       </div>
     </header>
 
-    <!-- Hero Kontak -->
     <section
-      class="relative bg-cover bg-center text-white flex-1"
+      class="relative bg-cover bg-center text-white flex-1 min-h-[calc(100vh-104px-52px)]"
       style="background-image: url('src/img/kontak.jpg')"
     >
-      <h1 class="text-white text-5xl font-bold ml-[10%] mt-[5%]">
-        kontak
+      <!-- Overlay Blur -->
+      <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+
+      <!-- Judul -->
+      <h1 class="relative z-10 text-white text-5xl font-bold ml-[10%] mt-[5%]">
+        Kontak
       </h1>
 
       <!-- Konten -->
-      <div
-        class="relative z-10 container mx-auto flex ml-[20%] mt-[10%] h-full"
-      >
-        <div>
-          <p class="font-semibold mb-2 text-4xl">Hubungi Kami</h2>
-            <p class="text-2xl">Alamat: Baltos (Balubur Town Square), Bandung</p>
-            <p class="text-2xl">Jam Operasional: 06.00 – 21.00 WIB</p>
-          </div>
+      <div class="relative z-10 container mx-auto ml-[20%] mt-[8%]">
+        <div class="p-6 rounded-xl max-w-xl">
+          <p class="font-semibold mb-4 text-4xl text-white">Hubungi Kami</p>
+          <p class="text-2xl text-white">
+            Alamat: Baltos (Balubur Town Square), Bandung
+          </p>
+          <p class="text-2xl text-white">Jam Operasional: 06.00 – 21.00 WIB</p>
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-800 py-3 flex-shrink-0">
+    <footer class="bg-white text-gray-800 py-3">
       <div class="container mx-auto flex justify-center space-x-6">
         <a href="#" target="_blank">
           <img src="src/img/wa.png" alt="WhatsApp" class="h-6 w-6" />
