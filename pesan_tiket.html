@@ -33,76 +33,81 @@
       class="relative text-white bg-cover bg-center flex-1"
       style="background-image: url('src/img/pesan_tiket.png')"
     >
-      <div
-        class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"
-      ></div>
+      <h1 class="text-white text-5xl md:text-5xl font-bold ml-[10%] mt-[5%]">
+        Pesan Tiket
+      </h1>
 
       <div
-        class="relative z-10 container mx-auto px-6 py-6 h-full flex flex-col justify-center"
+        class="relative z-10 container mx-auto px-4 py-4 h-full flex flex-col justify-center"
       >
-        <h1 class="text-3xl md:text-4xl font-bold mb-6">Pesan Tiket</h1>
-
-        <!-- Form Booking -->
-        <div
-          class="bg-white/90 text-black rounded-md p-4 w-full overflow-x-auto mb-4"
-        >
+        <!-- Formulir Pemesanan -->
+        <div class="border border-white p-4 rounded-md w-full overflow-x-auto">
           <form
-            class="flex flex-wrap md:flex-nowrap items-center justify-between gap-4"
+            class="grid grid-cols-6 gap-2 items-end text-xs text-white text-center font-medium"
           >
-            <div class="flex flex-col items-start">
-              <label class="text-xs font-medium">Lokasi Keberangkatan</label>
-              <input type="text" class="rounded-md px-3 py-1 border text-sm" />
+            <!-- Lokasi Keberangkatan -->
+            <div>
+              <label class="block mb-1">Lokasi Keberangkatan</label>
+              <input
+                type="text"
+                class="w-full px-3 py-1 rounded-full text-sm text-black text-center border border-gray-400"
+              />
             </div>
-            <span class="text-xl">⬇️</span>
 
-            <div class="flex flex-col items-start">
-              <label class="text-xs font-medium">Mau Kemana</label>
-              <input type="text" class="rounded-md px-3 py-1 border text-sm" />
+            <!-- Mau Kemana -->
+            <div>
+              <label class="block mb-1">Mau Kemana</label>
+              <input
+                type="text"
+                class="w-full px-3 py-1 rounded-full text-sm text-black text-center border border-gray-400"
+              />
             </div>
-            <span class="text-xl">⬇️</span>
 
-            <div class="flex flex-col items-start">
-              <label class="text-xs font-medium">Tanggal & Jam</label>
+            <!-- Tanggal & Jam -->
+            <div>
+              <label class="block mb-1">Tanggal & Jam</label>
               <input
                 type="datetime-local"
-                class="rounded-md px-3 py-1 border text-sm"
+                class="w-full px-3 py-1 rounded-full text-sm text-black text-center border border-gray-400"
               />
             </div>
-            <span class="text-xl">⬇️</span>
 
-            <div class="flex flex-col items-start">
-              <label class="text-xs font-medium">Data Diri</label>
+            <!-- Data Diri -->
+            <div>
+              <label class="block mb-1">Data Diri</label>
               <input
                 type="text"
-                class="rounded-md px-3 py-1 border text-sm"
-                placeholder="Nama / No HP"
+                class="w-full px-3 py-1 rounded-full text-sm text-black text-center border border-gray-400"
+                placeholder="Nama / HP"
               />
             </div>
-            <span class="text-xl">⬇️</span>
 
-            <div class="flex flex-col items-start">
-              <label class="text-xs font-medium">Pembayaran</label>
+            <!-- Pembayaran -->
+            <div>
+              <label class="block mb-1">Pembayaran</label>
               <input
                 type="text"
-                class="rounded-md px-3 py-1 border text-sm"
+                class="w-full px-3 py-1 rounded-full text-sm text-black text-center border border-gray-400"
                 placeholder="Transfer / QR"
               />
             </div>
-            <span class="text-xl">⬇️</span>
 
-            <button
-              type="submit"
-              class="bg-orange-500 text-white font-bold px-4 py-2 rounded-md hover:bg-orange-600 text-sm"
-            >
-              Pesan Sekarang
-            </button>
+            <!-- Tombol -->
+            <div class="flex items-end justify-center h-full">
+              <button
+                type="submit"
+                class="w-full px-3 py-2 bg-white text-black font-bold rounded-none border border-gray-400 hover:bg-gray-100"
+              >
+                Pesan<br />Sekarang
+              </button>
+            </div>
           </form>
         </div>
 
         <!-- Catatan -->
-        <div class="text-sm">
+        <div class="text-xl mt-[20%]">
           <h2 class="font-bold mb-2">Catatan Penting:</h2>
-          <ul class="list-disc ml-5 space-y-1 text-xs">
+          <ul class="list-disc ml-5 space-y-1">
             <li>
               E-tiket akan dikirim ke WhatsApp dan/atau email setelah pembayaran
               berhasil.
