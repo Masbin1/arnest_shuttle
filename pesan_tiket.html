@@ -7,14 +7,14 @@
     <link href="dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="src/img/fav.png" />
   </head>
-  <body class="text-gray-900">
+  <body class="text-gray-900 h-screen flex flex-col">
     <!-- Header -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md flex-shrink-0">
       <div
         class="container mx-auto flex justify-between items-center py-2 px-4"
       >
         <!-- Logo -->
-        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-28" />
+        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-20" />
         <!-- Menu -->
         <nav class="space-x-4 font-semibold text-sm">
           <a href="index.html" class="hover:text-orange-500">Beranda</a>
@@ -22,9 +22,7 @@
             >Tentang Kami</a
           >
           <a href="layanan.html" class="hover:text-orange-500">Layanan</a>
-          <a href="pesan_tiket.html" class="hover:text-orange-500"
-            >Pesan Tiket</a
-          >
+          <a href="pesan_tiket.html" class="text-orange-500">Pesan Tiket</a>
           <a href="kontak.html" class="hover:text-orange-500">Kontak</a>
         </nav>
       </div>
@@ -32,24 +30,21 @@
 
     <!-- Hero -->
     <section
-      class="relative text-white bg-cover bg-center"
-      style="
-        background-image: url('src/img/pesan_tiket.png');
-        min-height: calc(100vh - 144px);
-      "
+      class="relative text-white bg-cover bg-center flex-1"
+      style="background-image: url('src/img/pesan_tiket.png')"
     >
       <div
         class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"
       ></div>
 
       <div
-        class="relative z-10 container mx-auto px-6 py-12 h-full flex flex-col justify-start"
+        class="relative z-10 container mx-auto px-6 py-6 h-full flex flex-col justify-center"
       >
-        <h1 class="text-3xl md:text-4xl font-bold mb-8">Pesan Tiket</h1>
+        <h1 class="text-3xl md:text-4xl font-bold mb-6">Pesan Tiket</h1>
 
         <!-- Form Booking -->
         <div
-          class="bg-white/90 text-black rounded-md p-4 w-full overflow-x-auto"
+          class="bg-white/90 text-black rounded-md p-4 w-full overflow-x-auto mb-4"
         >
           <form
             class="flex flex-wrap md:flex-nowrap items-center justify-between gap-4"
@@ -105,9 +100,9 @@
         </div>
 
         <!-- Catatan -->
-        <div class="mt-8 text-sm">
+        <div class="text-sm">
           <h2 class="font-bold mb-2">Catatan Penting:</h2>
-          <ul class="list-disc ml-5 space-y-1">
+          <ul class="list-disc ml-5 space-y-1 text-xs">
             <li>
               E-tiket akan dikirim ke WhatsApp dan/atau email setelah pembayaran
               berhasil.
@@ -125,7 +120,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-800 py-4">
+    <footer class="bg-white text-gray-800 py-3 flex-shrink-0">
       <div class="container mx-auto flex justify-center space-x-6">
         <a href="#" target="_blank">
           <img src="src/img/wa.png" alt="WhatsApp" class="h-6 w-6" />

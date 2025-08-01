@@ -7,14 +7,14 @@
     <link href="dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="src/img/fav.png" />
   </head>
-  <body class="text-gray-900">
+  <body class="text-gray-900 h-screen flex flex-col">
     <!-- Header -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md flex-shrink-0">
       <div
         class="container mx-auto flex justify-between items-center py-2 px-4"
       >
         <!-- Logo -->
-        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-[20rem]" />
+        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-20" />
         <!-- Menu -->
         <nav class="space-x-4 font-semibold text-sm">
           <a href="index.html" class="hover:text-orange-500">Beranda</a>
@@ -25,18 +25,15 @@
           <a href="pesan_tiket.html" class="hover:text-orange-500"
             >Pesan Tiket</a
           >
-          <a href="kontak.html" class="hover:text-orange-500">Kontak</a>
+          <a href="kontak.html" class="text-orange-500">Kontak</a>
         </nav>
       </div>
     </header>
 
     <!-- Hero Kontak -->
     <section
-      class="relative bg-cover bg-center text-white"
-      style="
-        background-image: url('src/img/kontak.jpg');
-        min-height: calc(100vh - 144px);
-      "
+      class="relative bg-cover bg-center text-white flex-1"
+      style="background-image: url('src/img/kontak.jpg')"
     >
       <!-- Overlay -->
       <div
@@ -57,7 +54,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-800 py-4">
+    <footer class="bg-white text-gray-800 py-3 flex-shrink-0">
       <div class="container mx-auto flex justify-center space-x-6">
         <a href="#" target="_blank">
           <img src="src/img/wa.png" alt="WhatsApp" class="h-6 w-6" />

@@ -7,14 +7,14 @@
     <link href="dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="src/img/fav.png" />
   </head>
-  <body class="text-gray-900">
+  <body class="text-gray-900 h-screen flex flex-col">
     <!-- Header -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md flex-shrink-0">
       <div
         class="container mx-auto flex justify-between items-center py-2 px-4"
       >
         <!-- Logo -->
-        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-28" />
+        <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-20" />
         <!-- Menu -->
         <nav class="space-x-4 font-semibold text-sm">
           <a href="index.html" class="hover:text-orange-500">Beranda</a>
@@ -30,24 +30,23 @@
 
     <!-- Tentang Kami Section dengan Background -->
     <section
-      class="relative min-h-[calc(100vh-120px)] bg-cover bg-center"
+      class="relative flex-1 bg-cover bg-center"
       style="background-image: url('src/img/tentang_kami.png')"
     >
       <!-- Overlay gelap untuk kontras teks -->
       <div class="absolute inset-0 bg-black/40"></div>
 
       <!-- Konten -->
-      <div class="relative z-10 container mx-auto px-6 py-12">
-        <!-- Garis Pembatas -->
-        <div class="border-t border-white/30 my-6"></div>
-
+      <div
+        class="relative z-10 container mx-auto px-6 py-8 h-full flex items-center"
+      >
         <!-- Konten Tentang Kami -->
         <div
           class="bg-white/90 p-6 rounded-lg max-w-4xl mx-auto backdrop-blur-sm"
         >
           <h2 class="text-2xl font-bold mb-4">Tentang Kami</h2>
 
-          <p class="text-gray-700 leading-relaxed mb-4">
+          <p class="text-gray-700 leading-relaxed mb-4 text-sm">
             Arnes Shuttle adalah layanan transportasi darat berbasis di Bandung
             yang dikelola oleh PT Niaga Handal Cemerlang. Berdiri sejak 1
             Desember 2011, kami hadir sebagai solusi mobilitas andal bagi
@@ -58,13 +57,13 @@
           </p>
 
           <div class="space-y-3">
-            <p class="text-gray-700">
+            <p class="text-gray-700 text-sm">
               <span class="font-bold">Visi</span> : Menjadi penyedia layanan
               transportasi darat terpercaya yang mendukung gaya hidup aktif dan
               efisien.
             </p>
 
-            <p class="text-gray-700">
+            <p class="text-gray-700 text-sm">
               <span class="font-bold">Misi</span> : Menyediakan layanan yang
               aman, nyaman, dan efisien, meningkatkan aksesibilitas dan
               mobilitas masyarakat, Menjadi bagian dari solusi transportasi
@@ -76,7 +75,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-gray-800 py-4 border-t border-gray-200">
+    <footer
+      class="bg-white text-gray-800 py-3 border-t border-gray-200 flex-shrink-0"
+    >
       <div class="container mx-auto flex justify-center space-x-6">
         <a href="#" target="_blank">
           <img src="src/img/wa.png" alt="WhatsApp" class="h-6 w-6" />
