@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arnes Shuttle</title>
+    <title>Arnes Shuttle - Pesan Tiket</title>
     <link href="dist/output.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="src/img/fav.png" />
   </head>
@@ -13,9 +13,7 @@
       <div
         class="container mx-auto flex justify-between items-center py-2 px-4"
       >
-        <!-- Logo -->
         <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-20" />
-        <!-- Menu -->
         <nav class="space-x-4 font-semibold text-sm">
           <a href="index.html" class="hover:text-orange-500">Beranda</a>
           <a href="tentang_kami.html" class="hover:text-orange-500"
@@ -28,20 +26,26 @@
       </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section
-      class="relative text-white bg-cover bg-center flex-1"
+      class="relative flex-1 bg-cover bg-center flex flex-col"
       style="background-image: url('src/img/pesan_tiket.png')"
     >
-      <h1 class="text-white text-5xl md:text-5xl font-bold ml-[10%] mt-[5%]">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+      <h1
+        class="relative text-white text-4xl md:text-5xl font-bold mt-10 ml-[10%]"
+      >
         Pesan Tiket
       </h1>
 
+      <!-- Wrapper untuk center konten atas -->
       <div
-        class="relative z-10 container mx-auto px-4 py-4 h-full flex flex-col justify-center"
+        class="relative z-10 flex-1 flex flex-col justify-center items-center px-4"
       >
-        <!-- Formulir Pemesanan -->
-        <div class="border border-white p-4 rounded-md w-full overflow-x-auto">
+        <div
+          class="border border-white p-4 rounded-md w-full max-w-5xl backdrop-blur-sm bg-white/20"
+        >
           <form
             class="grid grid-cols-6 gap-2 items-end text-xs text-white text-center font-medium"
           >
@@ -103,11 +107,15 @@
             </div>
           </form>
         </div>
+      </div>
 
-        <!-- Catatan -->
-        <div class="text-xl mt-[20%]">
-          <h2 class="font-bold mb-2">Catatan Penting:</h2>
-          <ul class="list-disc ml-5 space-y-1">
+      <!-- Catatan -->
+      <div class="relative z-10 container mx-auto px-4 pb-8">
+        <div
+          class="bg-white/20 backdrop-blur-sm p-4 rounded-md text-white text-sm"
+        >
+          <h2 class="font-bold text-lg mb-2">Catatan Penting:</h2>
+          <ul class="list-disc ml-6 space-y-1">
             <li>
               E-tiket akan dikirim ke WhatsApp dan/atau email setelah pembayaran
               berhasil.

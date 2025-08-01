@@ -13,9 +13,7 @@
       <div
         class="container mx-auto flex justify-between items-center py-2 px-4"
       >
-        <!-- Logo -->
         <img src="src/img/logo.png" alt="Arnes Shuttle" class="h-20" />
-        <!-- Menu -->
         <nav class="space-x-4 font-semibold text-sm">
           <a href="index.html" class="hover:text-orange-500">Beranda</a>
           <a href="tentang_kami.html" class="hover:text-orange-500"
@@ -31,7 +29,7 @@
     </header>
 
     <!-- Layanan Section -->
-    <section class="relative flex-1 text-white">
+    <section class="relative flex-1">
       <!-- Background -->
       <div class="absolute inset-0">
         <img
@@ -39,36 +37,39 @@
           alt="Layanan Background"
           class="w-full h-full object-cover"
         />
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"
-        ></div>
+        <!-- Overlay & Blur -->
+        <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
       </div>
 
       <!-- Content -->
       <div class="relative z-10 h-full flex flex-col">
+        <h1
+          class="relative text-white text-4xl md:text-5xl font-bold mt-10 ml-[10%]"
+        >
+          Layanan
+        </h1>
+        <!-- Daftar Layanan -->
         <div class="container mx-auto py-12">
-          <h1 class="text-4xl font-bold mb-10">Layanan</h1>
-
           <div
-            class="space-y-8 leading-loose max-w-8xl justify-center text-3xl ml-[20%]"
+            class="space-y-8 leading-loose max-w-6xl text-white text-2xl ml-[20%]"
           >
             <div>
-              <p>Layanan Shuttle Antar Kota</h2>
+              <p class="font-semibold">Layanan Shuttle Antar Kota</p>
               <p>Rute harian dengan jadwal tetap. Aman, nyaman, dan on time.</p>
             </div>
             <div>
-              <p>Antar Jemput ke Bandara</h2>
+              <p class="font-semibold">Antar Jemput ke Bandara</p>
               <p>
                 Terhubung langsung ke Bandara Soekarno-Hatta dari titik-titik
                 strategis.
               </p>
             </div>
             <div>
-              <p>Pengiriman Paket</h2>
+              <p class="font-semibold">Pengiriman Paket</p>
               <p>Kirim barang antar kota cepat & aman.</p>
             </div>
             <div>
-              <p>Sewa Kendaraan</h2>
+              <p class="font-semibold">Sewa Kendaraan</p>
               <p>
                 Solusi fleksibel untuk kebutuhan perjalanan kelompok atau
                 bisnis.
