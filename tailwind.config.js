@@ -1,9 +1,14 @@
 module.exports = {
-  content: ["./*.html"],
+  content: [
+    "./*.html",                // Kalau HTML di root
+  ],
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Montserrat Alternates', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
+        montserratAlternates: ['"Montserrat Alternates"', 'sans-serif'],
+        opensans: ['"Open Sans"', 'sans-serif'],
+        comic: ['"Comic Sans"', 'sans-serif'],
       },
     },
   },
